@@ -1,0 +1,107 @@
+{
+    "name": "Menu",
+    "maps": [
+        {
+            "name": "Players Selection",
+            "id": "4dbdacee-a0c1-4240-be19-3c2a0d28e0d3",
+            "actions": [
+                {
+                    "name": "TwoPlayers",
+                    "type": "Button",
+                    "id": "c2ba9f5f-82b4-4533-80dd-670f8fc9984e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TreePlayers",
+                    "type": "Button",
+                    "id": "4ba71acb-ec15-4473-bfec-41517ab2c95b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "FourPlayers",
+                    "type": "Button",
+                    "id": "158577b5-e40a-4ead-a7f4-bb34ddb7985d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c662c81b-1408-43dd-8ed6-27a4436e20de",
+                    "path": "<Keyboard>/numpad2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TwoPlayers",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1bea06eb-bf15-4527-a952-1b4313d83b12",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TwoPlayers",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2ea94b8a-c0e8-4dff-bc1d-6806f33ce64b",
+                    "path": "<Keyboard>/numpad3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TreePlayers",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bb7028a0-3e7f-4228-a839-1630a1b28723",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TreePlayers",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ececb240-67f6-4005-9341-08e32f4d5aa2",
+                    "path": "<Keyboard>/numpad4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FourPlayers",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e49fe120-8ec9-4a33-b7db-6766041b7cf2",
+                    "path": "<Keyboard>/4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FourPlayers",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
