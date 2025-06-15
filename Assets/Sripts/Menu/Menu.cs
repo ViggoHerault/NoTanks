@@ -27,6 +27,6 @@ public class Menu : MonoBehaviour
     public void LoadScene(int amountOfPlayers)
     {
         SceneInformations.Instance.numberOfPlayers = amountOfPlayers;
-        SceneManager.LoadScene("Level");
+        SceneManager.LoadScene("Cinematic");
     }
 }
