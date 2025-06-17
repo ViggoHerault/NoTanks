@@ -13,6 +13,8 @@ public class Cinematic : MonoBehaviour
     private List<GameObject> lines;
     [SerializeField]
     private GameObject loadingScreen;
+    [SerializeField]
+    private AudioSource TutoMusic;
 
     private int TotalOfPlayers = 0;
 
@@ -58,6 +60,7 @@ public class Cinematic : MonoBehaviour
             lines[1].SetActive(true);
         }
 
+        TutoMusic.Play();
         yield return new WaitForSeconds(0.2f);
         loadingScreen.SetActive(false);
 

@@ -27,6 +27,9 @@ public class Bullet : MonoBehaviour
 
     private int BulletCount = 0;
 
+    [SerializeField]
+    private AudioSource BulletExplosion;
+
     public void SetNumberOfBullet(int number)
     {
         BulletCount = number;
@@ -68,6 +71,10 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.CompareTag("Obstacle") | collision.gameObject.CompareTag("Player"))
         {
             notTouched = false;
+        }
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            BulletExplosion.Play();
         }
     }
 }

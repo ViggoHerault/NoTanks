@@ -39,6 +39,7 @@ public class PlayerInstance : MonoBehaviour
     {
         this.GetComponent<PlayerMovements>().SetIsThePlayerAlive(b);
         this.GetComponent<PlayerShoot>().SetIsThePlayerAlive(b);
+        this.GetComponent<PlayerAudio>().SetIsThePlayerAlive(b);
     }
     public void ChangeRenderers(bool b) 
     {

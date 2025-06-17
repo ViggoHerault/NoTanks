@@ -48,14 +48,14 @@ public class PlayerShoot : MonoBehaviour
     {
         if (iShooting == false && isAlive == true)
         {
-            StartCoroutine(ShootTime(1f));
+            StartCoroutine(ShootTime(1.5f));//N1
         }
     }
 
     private IEnumerator ShootTime(float delay)
     {
         iShooting = true;
-        //bf.sliderValue = 0f;
+        this.GetComponent<PlayerAudio>().TankShoots();
 
         GameObject Bullet;
         Quaternion rotation = ShootPoint.transform.rotation;
@@ -75,10 +75,10 @@ public class PlayerShoot : MonoBehaviour
     {
         bf.sliderValue = 0f;
         float elapsed = 0f;
-        while (elapsed < 1)
+        while (elapsed < 1.5f)//N2
         {
             elapsed += Time.deltaTime;
-            bf.sliderValue = Mathf.Clamp01(elapsed / 1);
+            bf.sliderValue = Mathf.Clamp01(elapsed / 1.5f);
             yield return null;
         }
         bf.sliderValue = 1f;

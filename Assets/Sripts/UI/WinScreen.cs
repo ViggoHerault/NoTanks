@@ -16,6 +16,13 @@ public class WinScreen : MonoBehaviour
     public int TotalOfTanksInStart = 0;
     public int TotalOfTanksAlive = 0;
 
+    [SerializeField]
+    private AudioSource VictorySound;
+    private bool isVictory = false;
+
+    [SerializeField]
+    private AudioManager audioManager;
+
     public void SetupNumberOfTanks(int number) 
     {
         TotalOfTanksInStart = number;
@@ -46,8 +53,14 @@ public class WinScreen : MonoBehaviour
 
     private IEnumerator ReturnToMenu()
     {
-        yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene("Menu");
+        if (isVictory==false) 
+        {
+            isVictory = true;
+            yield return new WaitForSeconds(0.5f);
+            audioManager.StopMusic();
+            VictorySound.Play();
+            yield return new WaitForSeconds(3f);
+            SceneManager.LoadScene("Menu");
+        }
     }
-
 }
